@@ -1,1 +1,1 @@
-#These are mine HTML , CSS and Java Script assignments
+#These are mine HTML , CSS and Java Script files
