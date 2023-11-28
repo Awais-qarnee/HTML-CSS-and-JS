@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // let arr = [1,2,3,4,56,677,89,997,44,43,2,7,"Ali"]
+
+        // let a = arr.forEach((v , i,arr)=>{
+        //     // console.log(i,v,arr )
+        //     return v
+        // })
+        // console.log(a)
+        // console.log("Map Loop is Starting")
+        // let ad = arr.map((v , i,arr)=>{
+        //     // console.log(i,v,arr )
+        //     return v
+        // })
+        // console.log(ad)
+
+        let data = [
+            {
+                name: "Areesha",
+                rollNo: 99,
+                pak: 45,
+                math: 89,
+                comp: 99,
+                phy: 89,
+                eng: 89,
+                urdu: 78
+            }
+        ]
+        document.write(`
+<center>
+        <table border="">
+            <thead>
+                <tr>
+                    <th>Sr</th>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Pak</th>
+                    <th>Maths</th>
+                    <th>Comp</th>
+                    <th>Phy</th>
+                    <th>Eng</th>
+                    <th>Urdu</th>
+                    <th>Obtained Makrs</th>
+                    <th>Avrage</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${data.map((v, i) => {
+            console.log(v)
+          return  ` <tr>
+                    <td>${i+1}</td>
+                    <td>${v.name}</td>
+                    <td>${v.rollNo}</td>
+                    <td>${v.pak}</td>
+                    <td>${v.math}</td>
+                    <td>${v.comp}</td>
+                    <td>${v.phy}</td>
+                    <td>${v.eng}</td>
+                    <td>${v.urdu}</td>
+                    <td>${v.pak+v.math+v.comp+v.phy+v.eng+v.urdu}</td>
+                    <td>${(v.pak+v.math+v.comp+v.phy+v.eng+v.urdu)/6}</td>
+                    <td>${Math.round(((v.pak+v.math+v.comp+v.phy+v.eng+v.urdu)/550)*100)} </td>
+                </tr>`
+        })
+            }
+              
+            </tbody>
+        </table>
+    </center>
+
+
+`)
+
+// let number = 34.999
+// console.log(Math.round(number))
+let arr = [1,2,3,4,56,677,89,997,44,43,2,7,"Ali"]
+
+let fil = arr.filter((a)=>{
+    return a<100
+})
+console.log(fil)
+    </script>
+</body>
+
+</html>

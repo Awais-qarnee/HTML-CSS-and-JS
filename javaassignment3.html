@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+    <script>
+        let scoreA=0;
+        let scoreB=0;
+        let drawtime=0;
+        let key = prompt("Press 'A' if you wanna play with computer & Press 'B' if you wanna play with 2nd player")
+        if(key==="a"){
+            const choices = ["rock", "paper", "scissors"]; 
+            let m=prompt("How many times you want to play?");
+            m = Number.parseInt(m)
+            let k=1;
+
+            while ( k <= m) {
+                let c=prompt("First Player,Enter Your move ");
+                const d = choices[Math.floor(Math.random() * choices.length)];
+                    if (c==="rock" && d==="paper" || d==="rock" && c==="scissor" || c==="paper" && d==="scissor")
+                    {
+                        document.write("Player 1:" +c + "<br>")
+                        document.write("Computer:" +d + "<br>")
+                        document.write("Computer win's" + "<br>"+ "<br>"+ "<br>")
+                        scoreB++;
+                    }
+                    else if (d==="paper" && c==="paper" || d==="scissor" && c==="scissor" || d==="rock" && c==="rock")
+                    {
+                        document.write("Player 1:" +c + "<br>")
+                        document.write("Computer:" +d + "<br>")
+                        document.write("Match is Draw" + "<br>"+ "<br>"+ "<br>")
+                        drawtime++;
+
+                    }
+                    else if (d==="rock" && c==="paper" || c==="rock" && d==="scissor" || d==="paper" && c==="scissor")
+                    {
+                        document.write("Player 1:" +c + "<br>")
+                        document.write("Computer:" +d + "<br>")
+                        document.write("You have won the game" + "<br>"+ "<br>"+ "<br>")
+                        scoreA++;
+                    }
+                
+                    else
+                    {
+                        document.write("Enter correct string" + "<br>" + "<br>")
+                    }
+                k++
+            }   
+            let awais = 0 + scoreA
+            let string =`player 1 is ${awais} time winner`
+            document.write(string + "<br>")
+            let zohaib =0 + scoreB
+            let string1 =`Computer is ${zohaib} time winner`
+            document.write(string1 + "<br>")
+            let asad =0 + drawtime
+            let string2 =`Match is Draw ${asad} time`
+            document.write(string2 + "<br>" + "<br>")
+
+                if( scoreA > scoreB > drawtime){
+                    document.write("Player `1` is overall winner!" + "<br>")
+                }
+                else if(scoreA < scoreB > drawtime ){
+                    document.write("'Computer' is overall winner!" + "<br>")
+                }
+                else{
+                    document.write("Match is tie!" + "<br>")
+                }
+        }   
+                
+         else if (key==="b"){
+         
+              
+            let i=prompt("How many time you wanna play this game");
+            i = Number.parseInt(i)
+            let j=1;
+
+            while ( j <= i) {
+                let a=prompt("First Player,Enter Your move ");
+                let b=prompt("Second Player,Enter Your move");
+                    if (a==="rock" && b==="paper" || b==="rock" && a==="scissor" || a==="paper" && b==="scissor")
+                    {
+                        document.write("Player 1:" +a + "<br>")
+                        document.write("Player 2:" +b + "<br>")
+                        document.write("player 2 is winner" + "<br>"+ "<br>"+ "<br>")
+                        scoreB++;
+
+                    } 
+                    else if (b==="rock" && a==="paper" || a==="rock" && b==="scissor" || b==="paper" && a==="scissor")
+                    {
+                        document.write("Player 1:" +a + "<br>")
+                        document.write("Player 2:" +b + "<br>")
+                        document.write("player 1 is winner" + "<br>"+ "<br>"+ "<br>")
+                        scoreA++;
+                    }
+                
+                    else if (b==="paper" && a==="paper" || b==="scissor" && a==="scissor" || b==="rock" && a==="rock")
+                    {
+                        document.write("Player 1:" +a + "<br>")
+                        document.write("Player 2:" +b + "<br>")
+                        document.write("Match is Draw" + "<br>"+ "<br>"+ "<br>")
+                        drawtime++;
+
+                    }
+                    else
+                    {
+                        document.write("Enter correct string" + "<br>" + "<br>")
+                    }
+                    j++
+                }   
+                let awais = 0 + scoreA
+                let str =`player 1 is ${awais} times winner`
+                document.write(str + "<br>")
+                let zohaib =0 + scoreB
+                let str1 =`player 2 is ${zohaib} times winner`
+                document.write(str1 + "<br>")
+                let asad =0 + drawtime
+                let str2 =`Match is Draw ${asad} time`
+                document.write(str2 + "<br>" + "<br>")
+
+                if( scoreA > scoreB > drawtime){
+                    document.write("Overall Player 1 Win's" + "<br>")
+                }
+                else if(scoreA < scoreB > drawtime ){
+                    document.write("Overall Player 2 Win's" + "<br>")
+                }
+                else{
+                    document.write("Match is tie!" + "<br>")
+                }
+        }
+        else{
+            document.write("Select The Correct Option")
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let x = prompt("enter any number")
+        let sum = 0
+        let temp = x
+
+        while (temp > 0) {
+            y = temp % 10
+            sum += y * y * y
+            temp = parseInt(temp / 10)
+
+        }
+
+        if (x == sum) {
+            document.write("ARMSTRONG NUMBER")
+        }
+        else {
+            document.write("Not Armstrong")
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

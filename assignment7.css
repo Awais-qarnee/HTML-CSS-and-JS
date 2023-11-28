@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins ;
+}
+* {
+    min-height: 0;
+    min-width: 0;
+}
+@font-face{
+    font-family: poppins ;
+    src: url(assets/Poppins/Poppins-Regular.ttf);
+}
+.navbar {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    color: white;
+    z-index: 99;
+    width: 100%;
+    backdrop-filter: blur(20px);
+}
+.navbar nav>ul {
+
+    list-style: none;
+    display: flex;
+
+}
+.navbar nav {
+
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar nav>ul>li {
+    padding: 18px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    left: 9%;
+}
+nav .logo img {
+    width: 160px;
+    position: relative;
+    left: -30%;
+    top: 4px;
+}
+.navlist{
+    font-size: 14px;
+}
+.abcde{
+    color: #f14d5d;
+}
+.navhome{
+    color: rgb(186, 186, 186);
+}
+.abcd{
+    color: rgb(186, 186, 186);
+}
+.apple{
+    color: white;
+    border: 1px none #f14d5d;
+    background-color: #f14d5d;
+    border-radius: 5px 5px 5px 5px;
+    line-height: 23px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.navlist .apple{
+    /* padding: 5px 5px; */
+    line-height: 23px;
+}
+.wholebody{
+    background-color: #07121e;
+}
+.EachPageBanner {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: var(--blueMed);
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+.EachPageBanner .gradientLayer {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #1553a1;
+    border-radius: 10px;
+}
+.EachPageBanner .gradientLayer .padMainH {
+    padding: 50px 0;
+}
+.padMainH {
+    max-width: 1220px;
+    margin: auto;
+}
+.EachPageBanner .gradientLayer .padMainH .col-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.slwh, .sslwh {
+    font-family: var(--headFont);
+    margin: 0 0 -10px;
+    line-height: 46px;
+    letter-spacing: -.2px;
+    color: #fff;
+}
+.slwh {
+    font-size: 39px;
+    font-weight: 600;
+}
+.allcourses{
+    margin: 30px 0 0;
+    padding: 0 160px;
+}
+.eachcourse{
+    height: 100%;
+    padding: 80px 0;
+}
+.categoriessect{
+    display: inline-block;
+}
+.categoriessect img{
+    border: 0px none black;
+    border-radius: 7px;
+    justify-content: space-between;
+    width: 380px;
+    height: 460px;
+    align-items: center;
+    margin: 8px;
+    cursor: pointer;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    color: #fff;
+}
+.pagination button {
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin: 0 20px;
+    color: #fff;
+    background-color: #f14d5d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.bodysixth{
+    display: flex;
+    background-color: rgb(22, 0, 60);
+    color: white;
+    border-bottom: 1px solid #2a2742;
+    padding: 20px 10px 20px 10px;
+}
+.bodysixth ul li{
+    color: #b8b7c0;
+    list-style: none;
+    padding: 10px 10px 10px 15px;
+}
+/* @media (min-width: 992px) */
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+.sslwh {
+    font-size: 35px;
+    font-weight: 800;
+    padding: 15px;
+}
+.sslwh {
+    font-family: var(--headFont);
+    margin: 0 0 -10px;
+    line-height: 46px;
+    letter-spacing: -.2px;
+    color: #fff;
+}
+.socialMediaIcons {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactSectionFooter ul li a {
+    text-decoration: none;
+    color: #b8b7c0;
+}
+.socialMediaIcons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #2a2742;
+    color: #fff;
+    margin-right: 8px;
+}
+.copyRightSection {
+    padding: 20px 0 40px 0;
+    display: grid;
+    text-align: center;
+    color: #b8b7c0;
+    background-color: rgb(22, 0, 60);
+}

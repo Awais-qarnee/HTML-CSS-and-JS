@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+@font-face{
+    font-family: poppins ;
+    src: url(assets/Poppins/Poppins-Regular.ttf);
+}
+.bar{
+    background-color: darkblue;
+    color: white;
+}
+.email{
+    margin-left: 15%;
+    display: inline-block;
+}
+.phone{
+    margin-left: 20%;
+    display: inline-block;
+}
+.logos{
+    margin-left: 23%;
+    display: inline-block;
+}
+.fa-facebook{
+    color: white;
+}
+.body{
+    background-color: blue;
+    color: white;
+    height: 85vh;
+}
+.head{
+    margin-left: 10%;
+    display: inline-block;
+}
+.tab{
+    margin-left: 45%;
+    color: rgb(214, 214, 214);
+    display: inline-block;
+}
+.welcome{
+    margin-left: 7%;
+    display: inline-block;
+    width: 40%;
+}
+.image{
+    display: block;
+    height: 45vh;
+    width: 35%;
+    float: right;
+    margin-right: 8%;
+}
+.button1{
+    display: inline-block;
+    border: 2px solid white ;
+    margin-left: 7%;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.31);
+}
+.button2{
+    display: inline-block;
+    margin-left: 1%;
+}
+.window{
+    font-size: xx-large;
+    display: inline-block;
+    height: 50%;
+    width: 20%;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 30px;
+    margin-left: 4%;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    
+}
+.location{
+    font-size: xx-large;
+    display: inline-block;
+    height: 50%;
+    width: 20%;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 30px;
+    margin-left: 4%;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}
+.plane{
+    font-size: xx-large;
+    display: inline-block;
+    height: 50%;
+    width: 20%;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 30px;
+    margin-left: 4%;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}
+.earth{
+    font-size: xx-large;
+    display: inline-block;
+    height: 50%;
+    width: 20%;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 30px;
+    margin-left: 4%;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}

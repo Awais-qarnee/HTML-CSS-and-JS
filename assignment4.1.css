@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: black;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+.circle1{
+    width: 26%;
+    height: 50vh;
+    border: 2px solid rgb(0, 86, 0);
+    border-radius: 50%;
+    margin: auto;
+    background-color: rgb(0, 86, 0);
+}
+.circle2{
+    width: 26%;
+    height: 50vh;
+    border-radius: 50%;
+    margin: auto;
+    background: rgb(245,235,50);
+    background: linear-gradient(90deg, rgb(245, 235, 50) 0%, rgb(254, 102, 0) 50%, rgba(183,7,7,1) 100%);
+    background-position: center;
+    background-size: cover;
+}
+.circle3{
+    width: 26%;
+    height: 50vh;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: auto;
+    background-image: url(./3a299b165368013.Y3JvcCw1NTEyLDQzMTEsMCw2MDA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.square{
+    width: 70%;
+    min-height: 100vh;
+    border: 2px solid black;
+    margin: auto;
+    box-sizing: border-box;
+}
+.rect1{
+    width: 100%;
+    min-height: 33vh;
+    border-bottom:2px solid black ;
+    background-color: rgb(12, 91, 57);
+}
+.rect2{
+    width: 100%;
+    min-height: 33vh;
+    border-bottom:2px solid black ;
+    background: rgb(248,248,248);
+    background: linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(54, 54, 54) 100%);
+}
+.rect3{
+    width: 100%;
+    min-height: 33vh;
+    background-image: url(./dark-deku-my-hero-academia-thumb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

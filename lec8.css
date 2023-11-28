@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: tomato;
+    /* position: relative; */
+    height: 200vh;
+}
+.box{
+    border: 1px solid black;
+    width: 30%;
+    margin: 10px;
+    /* display: inline-block; */
+}
+/* .box1{
+    visibility: hidden;
+}
+.box2{
+    display: none;
+} */
+/* .box1{
+    display: inline-block;
+}
+.box2{
+    display: inline-block;
+}
+.box3{
+    display: inline-block;
+}
+.box4{
+    display: inline-block;
+} */
+
+/* Postion starting Relative */
+/* .box1{
+    position: relative;
+    top: 30px;
+    left: 50px;
+} */
+/* POostion Absolute */
+/* .box1{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+} */
+
+/* Relative And Absolute */
+
+/* .box1{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+} */
+
+/* Postion  Sticky ANd Fixed */
+
+.box1{
+    background-color: aqua;
+    position: sticky;
+    top: 0px;
+
+    z-index: 1;
+}
+.box2{
+    background-color: blue;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.fa-brands{
+    color: rgb(24, 119, 242);
+    background-color: white;
+    border-radius: 50%;
+    font-size: 50px;
+}

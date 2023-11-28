@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <script>
+        let totalRounds = prompt("How many rounds do you want to play?")
+        let player1Wins = 0;
+        let player2Wins = 0;
+
+        for (let round = 1; round <= totalRounds; round++) {
+            let player1Choice = prompt("Player 1, enter your move");
+            let player2Choice = prompt("Player 2, enter your move");
+
+            if (player1Choice === player2Choice) {
+                document.write(`Round ${round}: It's a Draw<br>`);
+            } else if (
+                (player1Choice === "rock" && player2Choice === "scissors") ||
+                (player1Choice === "paper" && player2Choice === "rock") ||
+                (player1Choice === "scissors" && player2Choice === "paper")
+            ) {
+                player1Wins++;
+                document.write(`Round ${round}: Player 1 wins<br>`);
+            } else {
+                player2Wins++;
+                document.write(`Round ${round}: Player 2 wins<br>`);
+            }
+        }
+
+        if (player1Wins > player2Wins) {
+            document.write("<br>Player 1 is the overall winner!");
+        } else if (player2Wins > player1Wins) {
+            document.write("<br>Player 2 is the overall winner!");
+        } else {
+            document.write("<br>It's a tie!");
+        }
+    </script>
+</body>
+
+</html>

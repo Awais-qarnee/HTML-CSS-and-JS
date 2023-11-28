@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+}
+
+.box {
+    background-color: tomato;
+    border: 1px solid;
+    margin: 10px;
+    display: none;
+}
+
+@media (max-width:450px) {
+    .box4 {
+        display: block;
+        background-color: aqua;
+        color: blue;
+    }
+}
+
+@media (min-width:451px) and (max-width:700px) {
+    .box3 {
+        display: block;
+        background-color: rgb(255, 162, 0);
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media (min-width:701px) and (max-width:1200px) {
+    .box2 {
+        display: block;
+        background-color: rgb(4, 0, 255);
+        color: rgb(255, 0, 0);
+    }
+}
+
+@media (min-width:1201px) {
+    .box1 {
+        display: block;
+        background-color: rgb(255, 242, 0);
+        color: rgb(0, 0, 0);
+    }
+}
+
+.button {
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+.button button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    font-size: 20px;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.button a {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    font-size: 20px;
+    border-radius: .25rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.button a:visited {
+    background-color: black;
+    color: orange;
+}
+
+.heading {
+    margin-top: 10px;
+    /* border: 1px solid; */
+}
+
+/* .heading h1::before {
+    content: "Hello, ";
+    color: red;
+}
+.heading h1::after {
+    content: " I am Boy ";
+    color: red;
+} */
+.heading h1{
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+.heading h1::before{
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s linear;
+
+}
+.heading h1:hover::before{
+width: 100%;
+}

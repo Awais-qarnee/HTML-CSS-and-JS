@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+       }
+.backvideo {
+    border: 0px solid #000;
+    width: 1516px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    position: relative;
+    color: white;
+}
+.textinner{
+    width: 20%;
+    float: left;
+}
+.textinner h1{
+    padding-bottom: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="backvideo">
+            <video playsinline autoplay muted loop poster >
+                <source src="https://www.edifycit.com/video/headerVideo.mp4" type="video/mp4">
+            </video>
+            <div class="text">
+                <div class="textinner">
+                    <h1>MAIN TEXT</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, mollitia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

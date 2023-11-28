@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: tomato;
+}
+.box1 {
+  /* border-width: 2px;
+    border-color: rgb(1, 136, 255);
+    border-style: solid; */
+  /* border: 2px solid rgb(1, 136, 255); */
+  /* border-top: 2px solid rgb(1, 136, 255);
+border-bottom: 2px solid rgb(1, 136, 255); */
+  /* border-radius: 20px; */
+  /* border-radius: 20px 10px; */
+  /* border-radius: 20px 30px 40px 50px; */
+  /* margin: 10px; */
+  /* width: 50%;
+margin: 10px auto; */
+}
+.box {
+  /* border: 2px solid rgb(1, 136, 255); */
+  /* margin: 10px; */
+  /* margin: 10px 5px; */
+  /* width: 50%; */
+  /* margin: 10px auto;
+padding: 33px;
+box-sizing: border-box; */
+}
+/* h1{
+    text-align: center;
+} */
+/* .box1 h1,.box1 p{
+    text-align: center;
+} */
+/* .box1 p{
+
+} */
+/* .box1 {
+    width: 50%;
+    & h1{
+color: aliceblue;
+    }
+} */
+
+.box1 {
+  background-color: gray;
+}
+.box2 {
+  background: rgb(0, 36, 3);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 3, 1) 0%,
+    rgba(94, 121, 9, 1) 32%,
+    rgba(0, 212, 255, 1) 74%,
+    rgba(255, 0, 23, 1) 100%
+  );
+  height: 100vh;
+}
+.box3 {
+  background-image: url("./images/download.jfif");
+  width: 100%;
+  min-height: 70vh;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+background-attachment: fixed;
+}
+.box3 .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  min-height: 70vh;
+}
+.box .overlay h1,
+.box .overlay p {
+  color: wheat;
+}
+.box4 {
+  height: 100vh;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let player1Wins = 0;
+        let player2Wins = 0;
+        let key=prompt("Press 'A' if you wanna play with computer & Press 'B' if you wanna play with 2nd player" )
+        if (key==="a") {
+            const choice=["rock","paper","scissors"];
+            let Round = prompt("How many times you want to play?")
+            for (let rou = 1; rou <= Round; rou++) {
+            let play = prompt("Player 1");
+            const d=choice[math.floor(math.random()*choice.length)];
+
+            if (play === d) {
+                document.write(`Round ${rou}: It's a Draw<br>`);
+            } else if (
+                (play === "rock" && d === "scissors") ||
+                (play === "paper" && d === "rock") ||
+                (play === "scissors" && d === "paper")
+            ) {
+                player1Wins++;
+                document.write(`Round ${rou}: Player 1 wins<br>`);
+            } else {
+                player2Wins++;
+                document.write(`Round ${rou}: computer  wins<br>`);
+            }
+        }
+
+        if (play > d) {
+            document.write("<br>Overall Player1 Win's!");
+        } else if (play > d) {
+            document.write("<br>Overall computer Win's!");
+        } else {
+            document.write("<br>It's a draw!");
+        }
+            
+        } else if(key==="b"){
+            
+            let totalRounds = prompt("How many times you want to play?")
+            for (let round = 1; round <= totalRounds; round++) {
+            let player1Choice = prompt("Player 1");
+            let player2Choice = prompt("Player 2");
+
+            if (player1Choice === player2Choice) {
+                document.write(`Round ${round}: It's a Draw<br>`);
+            } else if (
+                (player1Choice === "rock" && player2Choice === "scissors") ||
+                (player1Choice === "paper" && player2Choice === "rock") ||
+                (player1Choice === "scissors" && player2Choice === "paper")
+            ) {
+                player1Wins++;
+                document.write(`Round ${round}: Player 1 wins<br>`);
+            } else {
+                player2Wins++;
+                document.write(`Round ${round}: Player 2 wins<br>`);
+            }
+        }
+
+        if (player1Wins > player2Wins) {
+            document.write("<br>Overall Player1 Win's!");
+        } else if (player2Wins > player1Wins) {
+            document.write("<br>Overall Player2 Win's!");
+        } else {
+            document.write("<br>It's a draw!");
+        }
+    }
+    </script>
+</body>
+</html
